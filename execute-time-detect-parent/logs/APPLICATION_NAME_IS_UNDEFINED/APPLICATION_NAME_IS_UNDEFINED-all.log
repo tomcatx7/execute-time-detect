@@ -1,0 +1,64 @@
+2022-06-27 10:03:36:022|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test1 time : 512 ms
+2022-06-27 10:03:36:025|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 10:03:38:569|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test2 time : 2 s 526 ms
+2022-06-27 10:03:38:569|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 10:04:24:311|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test1 time : 517 ms
+2022-06-27 10:04:24:314|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 10:04:26:843|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test2 time : 2 s 527 ms
+2022-06-27 10:04:26:843|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 11:04:25:119|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:26:617|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:45:520|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:46:201|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:47:163|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:48:166|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:51:948|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:53:361|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:58:263|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:04:59:537|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:00:362|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:01:123|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:01:704|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:02:221|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:04:788|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:05:559|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 1 ms
+2022-06-27 11:05:07:718|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 1 ms
+2022-06-27 11:05:08:707|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:11:391|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:12:048|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:12:689|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:13:553|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:14:216|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:14:919|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:15:456|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:16:802|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:17:259|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:17:259|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:18:047|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:18:048|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:19:020|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:19:021|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:22:237|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:23:815|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:23:816|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:27:285|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:27:286|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:33:325|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:39:039|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:39:039|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod2.toString time : 
+2022-06-27 11:05:42:985|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test1 time : 511 ms
+2022-06-27 11:05:42:985|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 11:05:45:512|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test2 time : 2 s 525 ms
+2022-06-27 11:05:45:512|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 11:08:20:931|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test1 time : 519 ms
+2022-06-27 11:08:20:933|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 11:08:23:446|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test2 time : 2 s 511 ms
+2022-06-27 11:08:23:446|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 11:11:23:126|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test1 time : 509 ms
+2022-06-27 11:11:23:128|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 11:11:25:642|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test2 time : 2 s 512 ms
+2022-06-27 11:11:25:642|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 16:13:13:791|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test1 time : 511 ms
+2022-06-27 16:13:13:793|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent
+2022-06-27 16:13:16:309|DEBUG|main|enhance:66|com.github.zjimmy.intecepter.TimeDetectInterceper|execute class com.demo.test.RunMethod.test2 time : 2 s 514 ms
+2022-06-27 16:13:16:309|DEBUG|main|enhance:69|com.github.zjimmy.intecepter.TimeDetectInterceper|execute method time too long , start multicastEvent

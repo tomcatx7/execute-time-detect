@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="true">
+
+    <springProperty scope="context" name="APPLICATION_NAME" source="spring.application.name"/>
+    <springProperty scope="context" name="PORT" source="server.port"/>
+
+    <property name="LOG_DIR" value="./logs/"/>
+    <property name="MAX_FILE_SIZE" value="50MB"/>
+    <property name="MAX_HISTORY" value="180"/>
+    <property name="CHARSET" value="utf-8"/>
+
+    <!-- PATTERN CONFIG -->
+    <property name="PATTERN_CONSOLE" value="%cyan(%date{yyyy-MM-dd HH:mm:ss:SSS}) | %highlight(%-5level) | %boldYellow(%thread) | %boldGreen(%logger) | %msg%n"/>
+    <property name="PATTERN_MONITOR" value="%logId|%date|%logIp|${APPLICATION_NAME}|${PORT}|%level|%thread|%logger{80}|%file|%method:%line|%msg%n"/>
+    <property name="PATTERN_BUSINESS" value="%date{yyyy-MM-dd HH:mm:ss:SSS}|%-5level|%thread|%method:%line|%logger|%msg%n"/>
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>${PATTERN_CONSOLE}</pattern>
+            <charset>${CHARSET}</charset>
+        </encoder>
+    </appender>
+
+    <!-- 全部日志 appender  -->
+    <appender name="ALL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APPLICATION_NAME}/${APPLICATION_NAME}-all.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 按天回滚 daily -->
+            <fileNamePattern>${LOG_DIR}/${APPLICATION_NAME}/%d{yyyy-MM-dd}/${APPLICATION_NAME}-all-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <!-- 日志最大的历史 180天 -->
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- MAX_FILE_SIZE:这是活动文件的大小，默认值是10MB，这里设置为50MB -->
+                <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>${PATTERN_BUSINESS}</pattern>
+            <charset>${CHARSET}</charset>
+        </encoder>
+    </appender>
+
+    <!-- 出错日志 appender  -->
+    <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APPLICATION_NAME}/${APPLICATION_NAME}-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 按天回滚 daily -->
+            <fileNamePattern>${LOG_DIR}/${APPLICATION_NAME}/%d{yyyy-MM-dd}/${APPLICATION_NAME}-error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <!-- 日志最大的历史 180天 -->
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- MAX_FILE_SIZE:这是活动文件的大小，默认值是10MB，这里设置为50MB -->
+                <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>${PATTERN_BUSINESS}</pattern>
+            <charset>${CHARSET}</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 只打印错误日志 -->
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <logger name="com.github.zjimmy" additivity="false" level="DEBUG">
+        <appender-ref ref="ALL"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!-- 错误日志文件输出 -->
+    <root level="ERROR" additivity="false">
+        <appender-ref ref="ERROR"/>
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>

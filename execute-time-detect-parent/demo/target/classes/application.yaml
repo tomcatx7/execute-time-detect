@@ -1,0 +1,7 @@
+server:
+  port: 8089
+
+time-detect:
+  enable: true
+  basePackages: com.demo
+  threshold: 2000
